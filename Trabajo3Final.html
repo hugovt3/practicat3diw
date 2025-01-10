@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabajo 3 DIW </title>
+    <link rel="stylesheet" href="Trabajo3Final.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <button class="boton-menu" aria-label="Abrir menú">☰</button>
+        <input type="text" placeholder="Busca un producto o deporte" class="barra-busqueda">
+        <button class="boton-cesta" aria-label="Cesta">🛒</button>
+        <button class="boton-usuario" aria-label="Usuario">👤</button>
+    </header>
+
+    <main class="main">
+        <nav class="menu-navegacion">
+            <h2>Menú</h2>
+            <ul class="menu-lista">
+                <li> Ciclismo
+                    <ul>
+                        <li>Ropa</li>
+                        <li>Zapatillas</li>
+                        <li>Bicicletas</li>
+                    </ul>
+                </li>
+                <li> Fútbol
+                    <ul>
+                        <li>Ropa</li>
+                        <li>Zapatillas</li>
+                        <li>Pelotas</li>
+                    </ul>
+                </li>
+                <li> Baloncesto
+                    <ul>
+                        <li>Ropa</li>
+                        <li>Zapatillas</li>
+                        <li>Pelotas</li>
+                    </ul>
+                </li>
+                <li> Tennis
+                    <ul>
+                        <li>Ropa</li>
+                        <li>Zapatillas</li>
+                        <li>Pelotas</li>
+                        <li>Raquetas</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    <section class="seccion-ofertas">
+        <h2>Ofertas</h2>
+        <div class="grid-ofertas">
+            <img src="img/imagen1.png" alt="Imagen1" class="elemento-oferta">
+            <img src="img/imagen2.png" alt="Imagen2" class="elemento-oferta">
+            <img src="img/imagen3.png" alt="Imagen3" class="elemento-oferta">
+        </div>
+    </section>
+
+    <section class="seccion-mas_vendidos">
+        <h2>Lo más vendido</h2>
+        <div class="grid-mas_vendidos">
+            <img src="img/imagen4.png" alt="Imagen4" class="elemento-mas_vendido">
+            <img src="img/imagen5.png" alt="Imagen5" class="elemento-mas_vendido">
+            <img src="img/imagen6.png" alt="Imagen6" class="elemento-mas_vendido">
+        </div>
+    </section>
+</main>
+
+<!--Reemplazar inputs por texto plano-->
+<footer class="footer">
+    <div class="footer-email"> emailejemplo@gmail.com </div>
+    <div class="footer-telefono"> +34 123 456 789 </div>
+</footer>
+
+<!-- JavaScript para el menú desplegable, hecho con ayuda de ChatGPT -->
+<script>
+    const menuToggle = document.querySelector('.boton-menu');
+    const menu = document.querySelector('.menu-navegacion');
+    menuToggle.addEventListener('click', () => {
+        if (window.innerWidth < 768) { // Solo se activa en pantallas menores a 768px
+        menu.classList.toggle('show');
+        }
+    });
+</script>
+
+</body>
+</html>
